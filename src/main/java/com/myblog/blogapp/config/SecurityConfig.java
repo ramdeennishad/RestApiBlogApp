@@ -1,8 +1,8 @@
 package com.myblog.blogapp.config;
 
 
-import com.myblog.blogapp.security.CustomUserDetailsService;:wq
-iiii
+import com.myblog.blogapp.security.CustomUserDetailsService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
