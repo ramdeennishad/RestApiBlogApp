@@ -51,11 +51,11 @@ public class SecurityConfig {
                     .httpBasic()
                     .and()
                     .authorizeHttpRequests()
-                    .requestMatchers(HttpMethod.POST, "api/posts", "api/comments")
+                    .requestMatchers(HttpMethod.POST, "api/**")
                     .permitAll()
-                    .requestMatchers("api/admin/post/**")
-                    .hasRole("ADMIN")
-                    .requestMatchers("api/login")
+                    //.requestMatchers("api/admin/post/**")
+                    //.hasRole("ADMIN")
+                    .requestMatchers("api/auth/**")
                     .permitAll();
             return http.build();
         }
